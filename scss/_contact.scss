@@ -9,22 +9,39 @@
     background:
     linear-gradient(
         to right,
-        rgba($primary-color,0.7),
-rgba($primary-color,0.2)
+        rgba($primary-color,1),
+rgba($primary-color,0.8)
     ),
     url('/img/DSL_9717a.jpg') ;
     background-size: cover;
 
     h2{
         font-size: 3rem;
-        margin-bottom: 2rem;
     }
-    &_list{
+
+
+
+ 
+    .contact_list{
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
         font-size: 1.5rem;
+        .contact_email{
+            margin-top: .1em;
+            
+                    }
+                    .contact_phone{
+                        margin-top: .1em;
+            
+                    }
+                    .contact_address{
+                        margin-top: .1em;
+          
+            
+                    }
     }
+
     .social-icons{
         position: initial;
         margin-top: 2rem;

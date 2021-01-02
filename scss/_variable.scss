@@ -22,3 +22,18 @@ $secondary-color:#ff652f;
       @content;  
     }
 }
+@mixin media-pro13 {
+  @media screen and (min-width:2560px){
+    @content;  
+  }
+}
+@mixin media-pro16 {
+  @media screen and (min-width:3072px){
+    @content;  
+  }
+}
+@mixin media-4k {
+  @media screen and (min-width:3840px){
+    @content;  
+  }
+}

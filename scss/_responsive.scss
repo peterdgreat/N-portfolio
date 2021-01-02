@@ -31,7 +31,7 @@
     }
     .projects{
         &_bio-image{
-            height: 40vh;
+            height: 60vh;
         }
         &_items{
             grid-template-columns: repeat(2,1fr);
@@ -44,17 +44,32 @@
             grid-template-columns: repeat(2,1fr);
         }
     }
+    .social-icons{
+        margin-left: 2em;
+        a{
+            i{
+                font-size: 2rem;
+                margin-left: .5em;
+            }
+        }
+    }
 }
 
 @include media-lg{
+   
     .projects{
+        .text-secondary{
+        
+            font-size:3.5rem ;
+            margin-bottom: 4rem;
     
+        }
         &_items{
             grid-template-columns: repeat(3,1fr);
 
         }
         &_bio-image{
-            height: 50vh;
+            height: 60vh;
         }
        
 
@@ -65,6 +80,120 @@
 
 @include media-xl{
     .projects_bio-image{
-        height: 60vh;
+        height: 70vh;
     }
+    
+}
+@include media-pro13{
+   .home{
+       height: 200%;
+       width: auto;
+       overflow: hidden;
+     
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       h1,h2{
+           font-size: 5em;
+       }
+   
+   }
+.nav{
+    .menu-nav{
+        
+    margin-top: 3em;
+    margin-right:10em ;
+
+    }
+    .menu-nav_link{
+        font-size: 3rem;
+    }
+}
+.about{
+
+padding-bottom: 3rem;
+&_bio-image{
+    height:100vh;
+    h2{
+        font-size: 5rem;
+    }
+    p{
+font-size: 3rem;
+        width: 1000px;
+        margin: 2em auto;
+    }
+}
+}
+.social-icons{
+    margin-left: 4em;
+    a{
+        i{
+            font-size: 4rem;
+        }
+    }
+}
+.jobs{
+    width: 40vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-gap: 2rem;
+    &_job{
+        width: 700px;
+        margin: 0 auto;
+        background: lighten($primary-color,10%);
+        padding: 2.5rem;
+        border-bottom: 5px solid $secondary-color;
+   h2,h3{
+       margin:3.5rem 0 ;
+       font-size: 3rem;
+   }
+   h6{
+       margin: 2.3rem 0;
+       font-size: 2rem;
+   }
+   p{
+       margin: .5em 0;
+       font-size: 1.3rem;
+   }
+    }
+}
+.projects{
+    &_bio-image{
+        height: 100vh;
+    }
+    .text-secondary{
+        
+        font-size:4.5rem ;
+        margin-bottom: 5rem;
+    font: bolder;
+
+    }
+   
+}
+.contact{
+    h2{
+        
+        
+    font-size: 5rem;
+    }
+    .contact_list{
+        .contact_email{
+margin-top: 1em;
+
+font-size: 3rem;
+        }
+        .contact_phone{
+            margin-top: 1em;
+
+            font-size: 3rem;
+        }
+        .contact_address{
+            margin-top: 1em;
+
+font-size: 3rem;
+
+        }
+    }
+}
 }
